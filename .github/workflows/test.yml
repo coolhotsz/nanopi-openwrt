@@ -74,6 +74,7 @@ jobs:
           #dnsmasq.ssr/gfw_list.conf' | xargs rm
           #cd ../../../
           rm -rf luci-theme-argon
+          git config merge.renameLimit 999999
           git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
           cd ../../
           git apply ../../enable_autocore.diff
